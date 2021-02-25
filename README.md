@@ -1,5 +1,11 @@
 # Vue版本Echarts实现中国地图三级钻取
-
+# 依据此功能 实现公司大屏展示项目 实现地图切换的城市散点图数据展示
+# 根据echarts的不同的配置来实现
+# 大屏项目难点 熟悉echarts地图的配置 渲染地图前必须要加载对应城市的json数据 重要的四部过程
+# 	let cityJson = await this.loadCityJson(item.areaCode);
+#    let option = await this.cityCodeGetOption(item.areaCode, item.cityName, cityJson,"bottom");
+#    echarts.registerMap(item.cityName, cityJson);    关键需要注册
+#    echarts.init(document.getElementById(`rank-${index + 1}`)).setOption(option, true);
 ## 1、演示地址
 [http://gh.dongkelun.com/vue-echarts-map/#/](http://gh.dongkelun.com/vue-echarts-map/#/)
 
