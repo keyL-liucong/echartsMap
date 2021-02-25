@@ -1,0 +1,14 @@
+// 大屏展示查询城市站点
+    bigScreenGetSiteDistribution(cityId,rank) {
+        return fetch_test({
+            url: `/ydb/admin/bigScreen/getSiteDistribution/${cityId}/${rank}`,
+            method: 'GET',
+        })
+    },
+    // 大屏获取前几名城市数据bigScreen/getTopProvince/3/true
+    bigScreenGetTopProvince(rank){
+        return fetch_test({
+            url: `/ydb/admin/bigScreen/getTopCity/${rank}/true`,
+            method: 'GET',
+        })
+    }
